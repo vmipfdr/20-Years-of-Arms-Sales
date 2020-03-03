@@ -1,4 +1,4 @@
-(https://www.helis.com/database/pics/news/2017/mh-60m-pylon.jpg)
+[![HH-60 Pave Hawk](https://www.helis.com/database/pics/news/2017/mh-60m-pylon.jpg)]
 
 # Lord of War
 
