@@ -12,3 +12,36 @@ curl http://armstrade.sipri.org/armstrade/html/export_trade_register.php --compr
     --data 'sum_deliveries=on' \
     --data 'Submit4=Download' \
 > sipri-arms-by-seller-1999.csv
+
+Russia, China, North Korea, Iran, 
+Venezuela, Brazil, Cuba, Belarus, Romania, Lebanon, Pakistan, Bolivia, South Africa, Algeria, Myanmar, Qatar, Bangladesh, Tanzania, Nigeria, Morocco, Sudan
+Trinidad and Tobago, Peru
+
+curl http://armstrade.sipri.org/armstrade/html/export_trade_register.php --compressed \
+    --data 'low_year=1998' \
+    --data 'high_year=2018' \
+    --data 'seller_country_code=RUS, PRK, CHN, IRN' \
+    --data 'buyer_country_code=VEN, BRA, CUB, BLR, ROU, LBN, PAK, BOL, ZAF, DZA, MMR, QAT, BGD, TZA, NGA, MAR, SDN, TTO, PER' \
+    --data 'armament_category_id=any' \
+    --data 'buyers_or_sellers=sellers' \
+    --data 'filetype=csv' \
+    --data 'include_open_deals=on' \
+    --data 'sum_deliveries=on' \
+    --data 'Submit4=Download' \
+> sipri-arms-by-seller-adversary-1999.csv
+
+
+//fix data from China because initial pull isn't working
+
+curl http://armstrade.sipri.org/armstrade/html/export_trade_register.php --compressed \
+    --data 'low_year=1998' \
+    --data 'high_year=2018' \
+    --data 'seller_country_code=CHN' \
+    --data 'buyer_country_code=VEN, BRA, CUB, BLR, ROU, LBN, PAK, BOL, ZAF, DZA, MMR, QAT, BGD, TZA, NGA, MAR, SDN, TTO, PER' \
+    --data 'armament_category_id=any' \
+    --data 'buyers_or_sellers=sellers' \
+    --data 'filetype=csv' \
+    --data 'include_open_deals=on' \
+    --data 'sum_deliveries=on' \
+    --data 'Submit4=Download' \
+> sipri-arms-by-seller-china-1998.csv
