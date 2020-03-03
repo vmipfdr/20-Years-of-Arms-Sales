@@ -1,0 +1,14 @@
+Throw this in your terminal and it will return a csv with the data based on the parameters you set.
+
+curl http://armstrade.sipri.org/armstrade/html/export_trade_register.php --compressed \
+    --data 'low_year=1998' \
+    --data 'high_year=2018' \
+    --data 'seller_country_code=USA, GBR, FRA, CAN, AUS, NZL' \
+    --data 'buyer_country_code=AFG, IRQ, SOM, LBY, SYR, PAK, BIH, GEO' \
+    --data 'armament_category_id=any' \
+    --data 'buyers_or_sellers=sellers' \
+    --data 'filetype=csv' \
+    --data 'include_open_deals=on' \
+    --data 'sum_deliveries=on' \
+    --data 'Submit4=Download' \
+> sipri-arms-by-seller-1999.csv
