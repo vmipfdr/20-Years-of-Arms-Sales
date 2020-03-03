@@ -1,4 +1,4 @@
-[![HH-60 Pave Hawk](https://www.americanspecialops.com/images/photos/night-stalkers/mh-60l-dap-bg.jpg)]
+(https://the-drive-3.imgix.net/https%3A%2F%2Fs3.amazonaws.com%2Fthe-drive-staging%2Fmessage-editor%252F1493757137426-hhhd52.jpg?auto=compress%2Cformat&ixlib=js-1.4.1&s=b8fa01e99856b612015d979229d0577c)
 
 # Lord of War
 
