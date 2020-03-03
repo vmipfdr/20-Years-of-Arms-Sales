@@ -1,4 +1,4 @@
-(https://the-drive-3.imgix.net/https%3A%2F%2Fs3.amazonaws.com%2Fthe-drive-staging%2Fmessage-editor%252F1493757137426-hhhd52.jpg?auto=compress%2Cformat&ixlib=js-1.4.1&s=b8fa01e99856b612015d979229d0577c)
+(https://www.helis.com/database/pics/news/2017/mh-60m-pylon.jpg)
 
 # Lord of War
 
