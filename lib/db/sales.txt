@@ -45,3 +45,16 @@ curl http://armstrade.sipri.org/armstrade/html/export_trade_register.php --compr
     --data 'sum_deliveries=on' \
     --data 'Submit4=Download' \
 > sipri-arms-by-seller-china-1998.csv
+
+curl http://armstrade.sipri.org/armstrade/html/export_trade_register.php --compressed \
+    --data 'low_year=1998' \
+    --data 'high_year=2018' \
+    --data 'seller_country_code=' \
+    --data 'buyer_country_code=' \
+    --data 'armament_category_id=any' \
+    --data 'buyers_or_sellers=sellers' \
+    --data 'filetype=csv' \
+    --data 'include_open_deals=on' \
+    --data 'sum_deliveries=on' \
+    --data 'Submit4=Download' \
+> sipri-arms-by-seller-2018.csv
