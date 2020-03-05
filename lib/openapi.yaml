@@ -1,0 +1,92 @@
+openapi: 3.0.1
+info:
+  title: defaultTitle
+  description: defaultDescription
+  version: "0.1"
+servers:
+- url: https://lord-of-war-data.herokuapp.com
+- url: http://localhost:3000
+paths:
+  /sales/weaponCategory/AC:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://lord-of-war-data.herokuapp.com
+    servers:
+    - url: https://lord-of-war-data.herokuapp.com
+  /sales/seller/code/CHN:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://lord-of-war-data.herokuapp.com
+    servers:
+    - url: https://lord-of-war-data.herokuapp.com
+  /sales/seller/China:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://lord-of-war-data.herokuapp.com
+    servers:
+    - url: https://lord-of-war-data.herokuapp.com
+  /sales/buyer/China:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://lord-of-war-data.herokuapp.com
+    servers:
+    - url: https://lord-of-war-data.herokuapp.com
+  /countries/:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://lord-of-war-data.herokuapp.com
+    servers:
+    - url: https://lord-of-war-data.herokuapp.com
+  /sales/buyer/code/IRQ:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://lord-of-war-data.herokuapp.com
+    servers:
+    - url: https://lord-of-war-data.herokuapp.com
+  /countries/region/Asia:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: https://lord-of-war-data.herokuapp.com
+    servers:
+    - url: https://lord-of-war-data.herokuapp.com
+  /countries:
+    get:
+      description: Auto generated using Swagger Inspector
+      responses:
+        "200":
+          description: Auto generated using Swagger Inspector
+        default:
+          description: Auto generated using Swagger Inspector
+      servers:
+      - url: http://localhost:3000
+    servers:
+    - url: http://localhost:3000
+components: {}
