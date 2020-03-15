@@ -16,6 +16,10 @@ This API is all about displaying 20 years of arms sales between world powers and
 
 4. I did a test seed of data, but will reseed and delete the database, then seed in orders first, then do a second seed with the country data.
 
+5. The product URLs to pull from:
+   https://lord-of-war-data.herokuapp.com/countries/
+   https://lord-of-war-data.herokuapp.com/sales/
+
 ### Technical Requirements
 
 - DONE Be built using Express and Mongoose.
