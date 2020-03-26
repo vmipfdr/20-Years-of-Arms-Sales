@@ -2,59 +2,44 @@
 
 You can get the data from various queries. You can search both Countries and Sales by various search methods.
 
-### /sales/weaponCategory/AC
+### Routes for API use
 
-#### GET method
+#### `/sales/weaponCategory/`
 
-##### Description:
+- Here you are searching for all sales by the weapon Category. Some examples are `["AC", "AV"]`
+- [An example URL](https://lord-of-war-data.herokuapp.com/sales/weaponCategory/AC)
 
-Here you are searching for all sales by the weapon Category. Some examples are ["AC", "AV"].
-An example URL is: http://localhost:3001/sales/weaponCategory/AC
+#### `/sales/seller/code/CHN`
 
-### /sales/seller/code/CHN
+- Here you are searching for all sales from a specific country selling the weapons using the `3 digit ISO code` as your selector. You can find the ISO Codes under the countries `alpha3Code`
+- [An example URL](https://lord-of-war-data.herokuapp.com/sales/seller/code/CHN)
 
-#### GET
+#### `/sales/buyer/code/IRQ`
 
-##### Description:
+- Here you are searching for all sales from the specific country buying the weapons using the `3 digit ISO code` as your selector. You can find the ISO Codes under the countries `alpha3Code`
+- [An example URL](https://lord-of-war-data.herokuapp.com/sales/buyer/code/IRQ)
 
-Here you are searching for all sales from a specific country selling the weapons using the 3 digit ISO code as your selector. You can find a the ISO Codes under the countries alpha3Code.
+#### `/sales/seller/China`
 
-### /sales/seller/China
+- Here you are searching for all sales from a specific country using the full name of the country.
+- [An example URL](https://lord-of-war-data.herokuapp.com/sales/seller/China)
 
-#### GET
+#### `/sales/buyer/China`
 
-##### Description:
+- Here you are searching for all purchases from a specific country using the full name of the country.
+- [An example URL](https://lord-of-war-data.herokuapp.com/sales/buyer/China)
 
-Here you are searching for all sales from a specific country using the full name of the country.
+#### `/countries/`
 
-### /sales/buyer/China
+- Here you are searching for all countries and returning a `JSON`
+- [An example URL](https://lord-of-war-data.herokuapp.com/countries)
 
-#### GET
+#### '/countries/code/USA'
 
-##### Description:
+- Here you are searching for data from a specific country using the '3 digit ISO code' as your selector. You can find the ISO Codes under the countries 'alpha3code'
+- [An example URL](https://lord-of-war-data.herokuapp.com/countries/code/USA)
 
-Here you are searching for all purchases from a specific country using the full name of the country.
+#### `/countries/region/Asia`
 
-### /countries/
-
-#### GET
-
-##### Description:
-
-Here you are searching for all countries and returning a JSON.
-
-### /sales/buyer/code/IRQ
-
-#### GET
-
-##### Description:
-
-Here you are searching for all sales from the specific country buying the weapons using the 3 digit ISO code as your selector. You can find a the ISO Codes under the countries alpha3Code.
-
-### /countries/region/Asia
-
-#### GET
-
-##### Description:
-
-Here you are searching for all countries that are from a specific region of the world.
+- Here you are searching for all countries that are from a specific region of the world.
+- [An example URL](https://lord-of-war-data.herokuapp.com/countries/region/Asia)
