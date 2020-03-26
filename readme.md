@@ -6,7 +6,7 @@ This API is all about displaying 20 years of arms sales between world powers and
 
 ### Steps
 
-1. First I headed to the armstrade.sipri.org site to read through the available data. Originally the data is returned in an RTF format, which is not easily consumable to determine if the data is usable. I found [this Github repo](https://gist.github.com/jsvine/9cb3300588ed402160fe) that discussed a way to hit the query GUI from the terminal and pulling the data into a csv. I did an initial pull, adjusted my parameters, widen my search criteria and pulled back sales between `sellers = ["USA", "GBR", "NZL", "AUS", "CAN", "FRA"] and buyers = ["AFG", "IRQ", "SOM", "LBY", "SYR", "PAK", "BIH", "GEO"]` between 1998 and 2018.
+1. First I headed to the armstrade.sipri.org site to read through the available data. Originally the data is returned in an RTF format, which is not easily consumable to determine if the data is usable. I found [this Github repo](https://gist.github.com/jsvine/9cb3300588ed402160fe) that discussed a way to hit the query GUI from the terminal and pulling the data into a csv. I did an initial pull, adjusted my parameters, widen my search criteria and pulled back sales between `sellers = ["USA", "GBR", "NZL", "AUS", "CAN", "FRA"]` and ```buyers = ["AFG", "IRQ", "SOM", "LBY", "SYR", "PAK", "BIH", "GEO"] ` between 1998 and 2018.
 
 2. Next I hit a [Countries API](https://restcountries.eu) to pull in some country data for the countres involved in the above arms deals. I pulled every country into a single JSON and used that in case I plan on scaling the arms deals dataset to include more than listed above.
 
@@ -18,3 +18,27 @@ This API is all about displaying 20 years of arms sales between world powers and
 
 - [Countries](https://lord-of-war-data.herokuapp.com/countries/) - The route for all countries
 - [Sales](https://lord-of-war-data.herokuapp.com/sales/) - the route for all sales
+
+### Routes for API use
+
+- `/sales/weaponCategory/`
+  Here you are searching for all sales by the weapon Category. Some examples are `["AC", "AV"]`
+  [An example URL](https://lord-of-war-data.herokuapp.com/sales/weaponCategory/AC)
+
+- `/sales/seller/code/CHN`
+  Here you are searching for all sales from a specific country selling the weapons using the `3 digit ISO code` as your selector. You can find a the ISO Codes under the countries `alpha3Code`
+
+- `/sales/buyer/code/IRQ`
+  Here you are searching for all sales from the specific country buying the weapons using the `3 digit ISO code` as your selector. You can find a the ISO Codes under the countries `alpha3Code`
+
+- `/sales/seller/China`
+  Here you are searching for all sales from a specific country using the full name of the country.
+
+- `/sales/buyer/China`
+  Here you are searching for all purchases from a specific country using the full name of the country.
+
+- `/countries/`
+  Here you are searching for all countries and returning a `JSON`
+
+- `/countries/region/Asia`
+  Here you are searching for all countries that are from a specific region of the world.
