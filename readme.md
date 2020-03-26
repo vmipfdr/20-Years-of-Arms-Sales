@@ -19,7 +19,7 @@ This API is all about displaying 20 years of arms sales between world powers and
 
 ### Routes for API use
 
-#### `/sales/weaponCategory/`
+#### `/sales/weaponCategory/AC`
 
 - Here you are searching for all sales by the weapon Category. Some examples are `["AC", "AV"]`
 - [An example URL](https://lord-of-war-data.herokuapp.com/sales/weaponCategory/AC)
