@@ -49,7 +49,7 @@ This API is all about displaying 20 years of arms sales between world powers and
 - Here you are searching for all countries and returning a `JSON`
 - [An example URL](https://lord-of-war-data.herokuapp.com/countries)
 
-#### '/countries/code/USA'
+#### `/countries/code/USA`
 
 - Here you are searching for data from a specific country using the '3 digit ISO code' as your selector. You can find the ISO Codes under the countries 'alpha3code'
 - [An example URL](https://lord-of-war-data.herokuapp.com/countries/code/USA)
